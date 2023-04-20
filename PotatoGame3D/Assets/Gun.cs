@@ -5,6 +5,8 @@ using StarterAssets;
 
 public class Gun : MonoBehaviour
 {
+    public int maxAmmo = 30;
+    public int currentAmmo;
     private StarterAssetsInputs _input;
     [SerializeField]
     private GameObject bulletPrefab;
@@ -21,18 +23,29 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (_input.shoot)
         {
             Shoot();
             _input.shoot = false;
+            currentAmmo--;
         }
-    }
+        if (_input.reload)
+        {
+            Reload();
+            _input.reload = false;
+        }
 
-    void Shoot()
-    {
-        Debug.Log("Shoot!");
-        GameObject bullet = Instantiate(bulletPrefab, bulletPoint.transform.position, transform.rotation);
-        bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
-        Destroy(bullet, 1);
+        void Shoot()
+        {
+            Debug.Log("Shoot!");
+            GameObject bullet = Instantiate(bulletPrefab, bulletPoint.transform.position, transform.rotation);
+            bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
+            Destroy(bullet, 1);
+        }
+        void Reload()
+        {
+            currentAmmo = maxAmmo;
+        }
     }
 }
