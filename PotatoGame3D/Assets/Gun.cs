@@ -24,7 +24,7 @@ public class Gun : MonoBehaviour
     void Update()
     {
 
-        if (_input.shoot)
+        if (_input.shoot && currentAmmo >= 1)
         {
             Shoot();
             _input.shoot = false;

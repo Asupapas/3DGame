@@ -133,6 +133,16 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
+      propertyPath: MoveSpeed
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: SprintSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
       propertyPath: GroundLayers.m_Bits
       value: 1
       objectReference: {fileID: 0}
@@ -769,10 +779,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c56330e14cc9d34180077167c3212e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  maxAmmo: 30
+  currentAmmo: 30
   bulletPrefab: {fileID: 4905704591343755407, guid: 5a4a681a3695c024998c2b94f90c3da7,
     type: 3}
   bulletPoint: {fileID: 1272014784}
-  bulletSpeed: 600
+  bulletSpeed: 4000
 --- !u!1 &1861077295
 GameObject:
   m_ObjectHideFlags: 0
