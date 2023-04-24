@@ -14,6 +14,8 @@ public class Gun : MonoBehaviour
     private GameObject bulletPoint;
     [SerializeField]
     public float bulletSpeed = 600;
+    public bool isActive = false; // new variable to indicate if the weapon is active
+
     // Start is called before the first frame update
     void Start()
     {
@@ -23,17 +25,20 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        if (_input.shoot && currentAmmo >= 1)
+        // only update the gun if it is active
+        if (isActive)
         {
-            Shoot();
-            _input.shoot = false;
-            currentAmmo--;
-        }
-        if (_input.reload)
-        {
-            Reload();
-            _input.reload = false;
+            if (_input.shoot && currentAmmo >= 1)
+            {
+                Shoot();
+                _input.shoot = false;
+                currentAmmo--;
+            }
+            if (_input.reload)
+            {
+                Reload();
+                _input.reload = false;
+            }
         }
 
         void Shoot()
@@ -43,6 +48,7 @@ public class Gun : MonoBehaviour
             bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
             Destroy(bullet, 1);
         }
+
         void Reload()
         {
             currentAmmo = maxAmmo;
