@@ -440,9 +440,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7a71ffff
-      m_LastClickedID: -36486
-      m_ExpandedIDs: f0faffff
+      m_SelectedIDs: 767d0000
+      m_LastClickedID: 32118
+      m_ExpandedIDs: f6faffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -478,7 +478,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6c262c1329a02fa49b5cb4c297106f3f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_MinSize: {x: 133, y: 30}
+  m_MinSize: {x: 129, y: 28}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: ProBuilder
@@ -922,9 +922,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 537.0354, y: 1001.3, z: 257.7}
+    m_Target: {x: 5.121702, y: 1002.8501, z: 1.54582}
     speed: 2
-    m_Value: {x: 537.0354, y: 1001.3, z: 257.7}
+    m_Value: {x: 5.121702, y: 1002.8501, z: 1.54582}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -934,7 +934,7 @@ MonoBehaviour:
   m_DoValidateTrueMetals: 0
   m_SceneViewState:
     m_AlwaysRefresh: 0
-    showFog: 1
+    showFog: 0
     showSkybox: 1
     showFlares: 1
     showImageEffects: 1
@@ -970,13 +970,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.28111076, y: 0.047476813, z: -0.01392298, w: 0.95840037}
+    m_Target: {x: 0.02018656, y: -0.52273554, z: -0.01239381, w: -0.8521954}
     speed: 2
-    m_Value: {x: 0.28108925, y: 0.048914302, z: -0.014344614, w: 0.95832694}
+    m_Value: {x: 0.020204619, y: -0.5214435, z: -0.012363204, w: -0.85295695}
   m_Size:
-    m_Target: 1.2247449
+    m_Target: 1.5753767
     speed: 2
-    m_Value: 1.2247487
+    m_Value: 1.5753767
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1122,23 +1122,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scripts
+    - Assets/StarterAssets
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scripts
+  - Assets/StarterAssets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: D:\AsuranDelarosa\3DPotatoGame\PotatoGame3D
+  m_LastProjectPath: D:\josejimenez\fix\3DGame\PotatoGame3D
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: fa810000
-    m_LastClickedID: 33274
-    m_ExpandedIDs: 000000003e80000000ca9a3bffffff7f
+    m_SelectedIDs: 14820000
+    m_LastClickedID: 33300
+    m_ExpandedIDs: 000000003880000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1166,7 +1166,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003e800000
+    m_ExpandedIDs: 0000000038800000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
