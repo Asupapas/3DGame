@@ -1,7 +1,7 @@
+using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using StarterAssets;
 
 public class Gun : MonoBehaviour
 {
@@ -40,18 +40,18 @@ public class Gun : MonoBehaviour
                 _input.reload = false;
             }
         }
+    }
 
-        void Shoot()
-        {
-            Debug.Log("Shoot!");
-            GameObject bullet = Instantiate(bulletPrefab, bulletPoint.transform.position, transform.rotation);
-            bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
-            Destroy(bullet, 1);
-        }
+    void Shoot()
+    {
+        Debug.Log("Shoot!");
+        GameObject bullet = Instantiate(bulletPrefab, bulletPoint.transform.position, transform.rotation);
+        bullet.GetComponent<Rigidbody>().AddForce(transform.forward * bulletSpeed);
+        Destroy(bullet, 1);
+    }
 
-        void Reload()
-        {
-            currentAmmo = maxAmmo;
-        }
+    void Reload()
+    {
+        currentAmmo = maxAmmo;
     }
 }

@@ -6,7 +6,7 @@ public class WeaponSwitcher : MonoBehaviour
 {
     public int activeWeaponIndex = 0;
     private Gun[] weapons;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -69,5 +69,3 @@ public class WeaponSwitcher : MonoBehaviour
         // show the weapon switch menu here
     }
 }
-
-

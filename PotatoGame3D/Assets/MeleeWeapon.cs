@@ -9,7 +9,7 @@ public class MeleeWeapon : MonoBehaviour
     public float attackDelay = 1.0f;
     private Animator animator;
     private float lastAttackTime;
-    
+
 
     // Start is called before the first frame update
     void Start()
@@ -42,7 +42,7 @@ public class MeleeWeapon : MonoBehaviour
             //EnemyHealth enemyHealth = hitCollider.GetComponent<EnemyHealth>();
             //if (enemyHealth != null)
             {
-            //    enemyHealth.TakeDamage(damage);
+                //    enemyHealth.TakeDamage(damage);
             }
         }
     }
