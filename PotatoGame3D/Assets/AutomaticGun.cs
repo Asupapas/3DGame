@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.ProBuilder.MeshOperations;
 
 public class AutomaticGun : MonoBehaviour
 {
@@ -25,7 +26,7 @@ public class AutomaticGun : MonoBehaviour
     void Update()
     {
         //shoot input
-        if (Input.GetbuttonDown("Fire1"))
+        if (Input.GetButtonDown("Fire1"))
             isFiring = true;
         else if (Input.GetButtonUp("Fire1"))
             isFiring= false;
@@ -37,6 +38,7 @@ public class AutomaticGun : MonoBehaviour
             if (shootCounter > 0)
             {
                 shootCounter = rateOfFire;
+                Shoot();
             }
             else
                 shootCounter = Time.deltaTime;
@@ -47,9 +49,14 @@ public class AutomaticGun : MonoBehaviour
     {
         RaycastHit hit;
 
-        GameObject muzzleInst = Instaniate(muzzle, spawnPoint.position, spawnPoint.rotation);
+        GameObject muzzleInst = Instantiate(muzzle, spawnPoint.position, spawnPoint.rotation);
         muzzleInst.transform.parent = spawnPoint;
 
-        if (Physics.Raycast(camera.transform))
+        if (Physics.Raycast(camera.transform.position, camera.transform.forward, out hit, distance))
+        {
+            Instantiate(impact, hit.point, Quaternion.LookRotation(hit.normal));
+        }
+        else
+            Debug.Log("Not hit");
     }
 }
