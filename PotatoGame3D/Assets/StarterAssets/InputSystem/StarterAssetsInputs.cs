@@ -5,38 +5,23 @@ using UnityEngine.InputSystem;
 
 namespace StarterAssets
 {
-    public class StarterAssetsInputs : MonoBehaviour
-    {
-        [Header("Character Input Values")]
-        public Vector2 move;
-        public Vector2 look;
-        public bool jump;
-        public bool sprint;
-        public bool shoot;
-        public bool reload;
+	public class StarterAssetsInputs : MonoBehaviour
+	{
+		[Header("Character Input Values")]
+		public Vector2 move;
+		public Vector2 look;
+		public bool jump;
+		public bool sprint;
 
-        [Header("Movement Settings")]
-        public bool analogMovement;
+		[Header("Movement Settings")]
+		public bool analogMovement;
 
-        [Header("Mouse Cursor Settings")]
-        public bool cursorLocked = true;
-        public bool cursorInputForLook = true;
-
-        void Start()
-        {
-            // Hides the cursor...
-            Cursor.visible = false;
-            // Releases the cursor
-            Cursor.lockState = CursorLockMode.None;
-            // Locks the cursor
-            Cursor.lockState = CursorLockMode.Locked;
-            // Confines the cursor
-            Cursor.lockState = CursorLockMode.Confined;
-        }
-
+		[Header("Mouse Cursor Settings")]
+		public bool cursorLocked = true;
+		public bool cursorInputForLook = true;
 
 #if ENABLE_INPUT_SYSTEM
-        public void OnMove(InputValue value)
+		public void OnMove(InputValue value)
 		{
 			MoveInput(value.Get<Vector2>());
 		}
@@ -58,47 +43,38 @@ namespace StarterAssets
 		{
 			SprintInput(value.isPressed);
 		}
-		
-		public void OnShoot(InputValue value)
-		{
-			shoot = (value.isPressed);
-		}
-        public void OnReload(InputValue value)
-        {
-            reload = (value.isPressed);
-        }
 #endif
 
 
-        public void MoveInput(Vector2 newMoveDirection)
-        {
-            move = newMoveDirection;
-        }
+		public void MoveInput(Vector2 newMoveDirection)
+		{
+			move = newMoveDirection;
+		} 
 
-        public void LookInput(Vector2 newLookDirection)
-        {
-            look = newLookDirection;
-        }
+		public void LookInput(Vector2 newLookDirection)
+		{
+			look = newLookDirection;
+		}
 
-        public void JumpInput(bool newJumpState)
-        {
-            jump = newJumpState;
-        }
+		public void JumpInput(bool newJumpState)
+		{
+			jump = newJumpState;
+		}
 
-        public void SprintInput(bool newSprintState)
-        {
-            sprint = newSprintState;
-        }
+		public void SprintInput(bool newSprintState)
+		{
+			sprint = newSprintState;
+		}
+		
+		private void OnApplicationFocus(bool hasFocus)
+		{
+			SetCursorState(cursorLocked);
+		}
 
-        private void OnApplicationFocus(bool hasFocus)
-        {
-            SetCursorState(cursorLocked);
-        }
-
-        private void SetCursorState(bool newState)
-        {
-            Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
-        }
-    }
-
+		private void SetCursorState(bool newState)
+		{
+			Cursor.lockState = newState ? CursorLockMode.Locked : CursorLockMode.None;
+		}
+	}
+	
 }
