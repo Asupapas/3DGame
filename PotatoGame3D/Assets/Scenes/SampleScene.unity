@@ -244,11 +244,11 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2111324967}
+      addedObject: {fileID: 2111324973}
     - targetCorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2111324973}
+      addedObject: {fileID: 2111324974}
   m_SourcePrefab: {fileID: 100100000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
 --- !u!1 &113414710 stripped
 GameObject:
@@ -1206,7 +1206,7 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1921407655}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &225521305
+--- !u!114 &225521308
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1215,14 +1215,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 225521300}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2c56330e14cc9d34180077167c3212e2, type: 3}
+  m_Script: {fileID: 11500000, guid: 3ada8a7292390ee42ad6208e8b7ccb80, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxAmmo: 30
   currentAmmo: 0
-  bulletPrefab: {fileID: 0}
-  bulletPoint: {fileID: 0}
-  bulletSpeed: 600
   isActive: 0
 --- !u!1 &410087039
 GameObject:
@@ -7329,7 +7326,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 167952, guid: 6f0a98602bcb0174db5bfe9ca9583a45,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 225521305}
+      addedObject: {fileID: 225521308}
   m_SourcePrefab: {fileID: 100100000, guid: 6f0a98602bcb0174db5bfe9ca9583a45, type: 3}
 --- !u!1001 &1974342895
 PrefabInstance:
@@ -7785,19 +7782,6 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 40076351}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2111324967
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 803005938}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d57026f2c9b730144992946720ab5acf, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeWeaponIndex: 0
 --- !u!114 &2111324973
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7814,6 +7798,21 @@ MonoBehaviour:
     x: 0
     y: 0
     z: 0
+--- !u!114 &2111324974
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803005938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 02f420eb5acebd2428f1a251feb8ca98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  weapons: []
+  keys: 310000003200000033000000
+  switchTime: 0
 --- !u!1 &2132930266 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8762286024517199033, guid: 9c489a8547f4d9e4387da15a4ff82c81,
