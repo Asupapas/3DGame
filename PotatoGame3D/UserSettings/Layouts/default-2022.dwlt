@@ -123,9 +123,13 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 1403
 =======
   controlID: 117
+>>>>>>> Stashed changes
+=======
+  controlID: 54
 >>>>>>> Stashed changes
 --- !u!114 &6
 MonoBehaviour:
@@ -152,9 +156,13 @@ MonoBehaviour:
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 1404
 =======
   controlID: 118
+>>>>>>> Stashed changes
+=======
+  controlID: 55
 >>>>>>> Stashed changes
 --- !u!114 &7
 MonoBehaviour:
@@ -185,9 +193,13 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   controlID: 1326
 =======
   controlID: 50
+>>>>>>> Stashed changes
+=======
+  controlID: 56
 >>>>>>> Stashed changes
 --- !u!114 &8
 MonoBehaviour:
@@ -214,6 +226,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
+<<<<<<< Updated upstream
   controlID: 1327
 =======
     width: 1508
@@ -222,6 +235,9 @@ MonoBehaviour:
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
   controlID: 51
+>>>>>>> Stashed changes
+=======
+  controlID: 57
 >>>>>>> Stashed changes
 --- !u!114 &9
 MonoBehaviour:
@@ -1112,9 +1128,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 9a850000
-      m_LastClickedID: 34202
-      m_ExpandedIDs: 7cf5ffff9a850000
+      m_SelectedIDs: e67d0000
+      m_LastClickedID: 32230
+      m_ExpandedIDs: a0faffff06fbffff847d0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1240,7 +1256,7 @@ MonoBehaviour:
     m_HSlider: 0
     m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 1
+    m_EnableMouseInput: 0
     m_EnableSliderZoomHorizontal: 0
     m_EnableSliderZoomVertical: 0
     m_UniformScale: 1
@@ -1388,7 +1404,7 @@ MonoBehaviour:
     m_SaveData: []
     m_OverlaysVisible: 1
   m_SearchFilter:
-    m_NameFilter: readme
+    m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -1398,23 +1414,31 @@ MonoBehaviour:
     m_SceneHandles: 
     m_ShowAllHits: 0
     m_SkipHidden: 0
-    m_SearchArea: 1
+    m_SearchArea: 2
     m_Folders:
+<<<<<<< Updated upstream
 <<<<<<< Updated upstream
     - Assets/StarterAssets
 =======
     - Assets/StarterAssets/InputSystem
 >>>>>>> Stashed changes
+=======
+    - Assets
+>>>>>>> Stashed changes
     m_Globs: []
-    m_OriginalText: readme
+    m_OriginalText: 
     m_ImportLogFlags: 0
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
   - Assets/StarterAssets
 =======
   - Assets/StarterAssets/InputSystem
+>>>>>>> Stashed changes
+=======
+  - Assets
 >>>>>>> Stashed changes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\AsuranDelarosa\3DPotatoGame\PotatoGame3D
@@ -1423,6 +1447,7 @@ MonoBehaviour:
   m_FolderTreeState:
 <<<<<<< Updated upstream
     scrollPos: {x: 0, y: 69}
+<<<<<<< Updated upstream
     m_SelectedIDs: 107e0000
     m_LastClickedID: 32272
     m_ExpandedIDs: 00000000007e0000107e00004c7e000000ca9a3bffffff7f
@@ -1431,6 +1456,11 @@ MonoBehaviour:
     m_SelectedIDs: 28820000
     m_LastClickedID: 33320
     m_ExpandedIDs: 00000000de810000f28100002a82000000ca9a3bffffff7f
+>>>>>>> Stashed changes
+=======
+    m_SelectedIDs: 3e800000
+    m_LastClickedID: 32830
+    m_ExpandedIDs: 000000003e80000000ca9a3bffffff7f
 >>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1460,9 +1490,13 @@ MonoBehaviour:
     m_SelectedIDs: 
     m_LastClickedID: 0
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
     m_ExpandedIDs: 00000000007e000000ca9a3bffffff7f
 =======
     m_ExpandedIDs: 
+>>>>>>> Stashed changes
+=======
+    m_ExpandedIDs: 000000003e800000
 >>>>>>> Stashed changes
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1654,7 +1688,7 @@ MonoBehaviour:
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
   m_LastInspectedObjectInstanceID: -1
-  m_LastVerticalScrollValue: 0
+  m_LastVerticalScrollValue: 313
   m_GlobalObjectId: 
   m_InspectorMode: 0
   m_LockTracker:

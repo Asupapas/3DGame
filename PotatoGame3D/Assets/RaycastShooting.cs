@@ -9,6 +9,7 @@ public class RaycastShooting : MonoBehaviour
     public int maxAmmo = 30;
     public int currentAmmo;
     private StarterAssetsInputs _input;
+    public bool isActive = false; // new variable to indicate if the weapon is active
     private void Start()
     {
         _input = transform.root.GetComponent<StarterAssetsInputs>();
