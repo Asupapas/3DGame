@@ -248,7 +248,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8616685848737228372, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 2111324974}
+      addedObject: {fileID: 2111324980}
   m_SourcePrefab: {fileID: 100100000, guid: c5efc39a8aaf6e64ea40e9ad573e9b47, type: 3}
 --- !u!1 &113414710 stripped
 GameObject:
@@ -318,7 +318,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d53a28d1294cb44a6002e3671236bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 4
+  maxHp: 10
+  currentHp: 0
 --- !u!4 &157463703 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 9005220659476430818, guid: 2d3a85ecde41a8246a79669975912b74,
@@ -1035,7 +1036,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32154
+  m_Name: pb_Mesh32608
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1219,7 +1220,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxAmmo: 30
-  currentAmmo: 0
+  currentAmmo: 30
   isActive: 0
 --- !u!1 &410087039
 GameObject:
@@ -1376,7 +1377,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32112
+  m_Name: pb_Mesh32562
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -3135,7 +3136,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457962, guid: 2c3055a11cb8f8540a181490a4c34b7c, type: 3}
       propertyPath: m_RootOrder
-      value: 0
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 457962, guid: 2c3055a11cb8f8540a181490a4c34b7c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -3143,7 +3144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457962, guid: 2c3055a11cb8f8540a181490a4c34b7c, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.182
+      value: -0.18200684
       objectReference: {fileID: 0}
     - target: {fileID: 457962, guid: 2c3055a11cb8f8540a181490a4c34b7c, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3155,15 +3156,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 457962, guid: 2c3055a11cb8f8540a181490a4c34b7c, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 457962, guid: 2c3055a11cb8f8540a181490a4c34b7c, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 457962, guid: 2c3055a11cb8f8540a181490a4c34b7c, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 457962, guid: 2c3055a11cb8f8540a181490a4c34b7c, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -3208,7 +3209,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32074
+  m_Name: pb_Mesh32524
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -3586,7 +3587,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8d53a28d1294cb44a6002e3671236bb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hp: 30
+  maxHp: 10
+  currentHp: 0
 --- !u!54 &816989594
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -4270,7 +4272,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32090
+  m_Name: pb_Mesh32540
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4435,7 +4437,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32024
+  m_Name: pb_Mesh32474
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -5325,7 +5327,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32242
+  m_Name: pb_Mesh32702
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -5496,7 +5498,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32010
+  m_Name: pb_Mesh32460
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -5661,7 +5663,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32264
+  m_Name: pb_Mesh32724
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -5844,13 +5846,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c56330e14cc9d34180077167c3212e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxAmmo: 30
-  currentAmmo: 30
-  bulletPrefab: {fileID: 4905704591343755407, guid: 5a4a681a3695c024998c2b94f90c3da7,
-    type: 3}
-  bulletPoint: {fileID: 1272014784}
-  bulletSpeed: 4000
-  isActive: 0
 --- !u!95 &1609164481
 Animator:
   serializedVersion: 5
@@ -5897,7 +5892,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxAmmo: 30
-  currentAmmo: 30
+  currentAmmo: 0
   isActive: 0
 --- !u!1 &1637428391
 GameObject:
@@ -6914,7 +6909,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32060
+  m_Name: pb_Mesh32510
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -7408,7 +7403,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32198
+  m_Name: pb_Mesh32654
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -7592,7 +7587,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   maxAmmo: 30
-  currentAmmo: 0
+  currentAmmo: 30
   isActive: 0
 --- !u!1 &2055130313
 GameObject:
@@ -7798,7 +7793,7 @@ MonoBehaviour:
     x: 0
     y: 0
     z: 0
---- !u!114 &2111324974
+--- !u!114 &2111324980
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -7807,12 +7802,13 @@ MonoBehaviour:
   m_GameObject: {fileID: 803005938}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02f420eb5acebd2428f1a251feb8ca98, type: 3}
+  m_Script: {fileID: 11500000, guid: 47246e1301ec0b54680e34ca8b9d9cc0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weapons: []
-  keys: 310000003200000033000000
-  switchTime: 0
+  weapons:
+  - {fileID: 1609164476}
+  - {fileID: 2048985218}
+  - {fileID: 225521300}
 --- !u!1 &2132930266 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8762286024517199033, guid: 9c489a8547f4d9e4387da15a4ff82c81,

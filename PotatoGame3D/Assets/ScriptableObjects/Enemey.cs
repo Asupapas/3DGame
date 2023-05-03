@@ -13,3 +13,8 @@ public class Enemey : MonoBehaviour, IDamageable
         if (health <= 0) Destroy(gameObject);
     }
 }
+
+internal interface IDamageable
+{
+    void TakeDamage(float damage);
+}

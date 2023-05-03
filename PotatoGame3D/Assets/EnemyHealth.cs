@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class EnemyHealth : MonoBehaviour
 {
-    public int hp;
+    public int maxHp = 10;
+    public int currentHp;
+
+    private void Start()
+    {
+        currentHp = maxHp;
+    }
 
     public void TakeDamage(int damage)
     {
-        hp -= damage;
-        if (hp <= 0)
+        currentHp -= damage;
+        if (currentHp <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
     }
 }
 
