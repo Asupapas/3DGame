@@ -8,13 +8,15 @@ public class RaycastShooting : MonoBehaviour
 {
     public int maxAmmo = 30;
     public int currentAmmo;
-    private StarterAssetsInputs _input;
+    public StarterAssetsInputs _input;
     public bool isActive = false;
+    private GunModifier gunModifier;
 
-    private void Start()
+    void Start()
     {
         _input = transform.root.GetComponent<StarterAssetsInputs>();
         gameObject.SetActive(isActive); // enable or disable the weapon game object based on isActive
+        gunModifier = GetComponent<GunModifier>();
     }
 
     void Update()
@@ -22,18 +24,11 @@ public class RaycastShooting : MonoBehaviour
         gameObject.SetActive(isActive); // enable or disable the weapon game object based on isActive
 
         RaycastHit hit;
-        if (_input.shoot && currentAmmo >= 1)
+        gameObject.SetActive(isActive); // enable or disable the weapon game object based on isActive
+
+        if (_input.shoot)
         {
-            Ray ray = new Ray(Camera.main.transform.position, Camera.main.transform.forward);
-            if (Physics.Raycast(ray, out hit))
-            {
-                _input.shoot = false;
-                currentAmmo--;
-                if (hit.collider.gameObject.tag == "Enemy")
-                {
-                    hit.collider.gameObject.GetComponent<EnemyHealth>().TakeDamage(1);
-                }
-            }
+            gunModifier.Shoot();
         }
         if (_input.reload)
         {

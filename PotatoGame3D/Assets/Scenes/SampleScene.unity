@@ -1300,6 +1300,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAmmo: 30
   currentAmmo: 30
+  _input: {fileID: 2111324981}
   isActive: 0
 --- !u!114 &225521311
 MonoBehaviour:
@@ -1314,6 +1315,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gun: {fileID: 225521300}
+--- !u!114 &225521312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225521300}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7f691dd5001a441b8f9f862f8e6c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootDelay: 5
 --- !u!1001 &311699260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1398,6 +1412,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1403706880}
+    - targetCorrespondingSourceObject: {fileID: 153908, guid: d8d2a274f4123a946b29f023b45aa0b8,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1403706881}
   m_SourcePrefab: {fileID: 100100000, guid: d8d2a274f4123a946b29f023b45aa0b8, type: 3}
 --- !u!1 &353278911
 GameObject:
@@ -1456,7 +1474,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2360c372aef70d4ea19e182846c7a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2111324961}
 --- !u!195 &353278914
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2762,7 +2779,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2360c372aef70d4ea19e182846c7a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2111324961}
 --- !u!195 &582345942
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -4251,6 +4267,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 1609164483}
+    - targetCorrespondingSourceObject: {fileID: 101050, guid: 2c3055a11cb8f8540a181490a4c34b7c,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1609164484}
   m_SourcePrefab: {fileID: 100100000, guid: 2c3055a11cb8f8540a181490a4c34b7c, type: 3}
 --- !u!43 &795695475
 Mesh:
@@ -4676,7 +4696,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2360c372aef70d4ea19e182846c7a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2111324961}
 --- !u!64 &816989597
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5919,7 +5938,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2360c372aef70d4ea19e182846c7a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2111324961}
 --- !u!195 &1135966454
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6930,6 +6948,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAmmo: 30
   currentAmmo: 30
+  _input: {fileID: 2111324981}
   isActive: 0
 --- !u!114 &1403706880
 MonoBehaviour:
@@ -6944,6 +6963,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gun: {fileID: 1403706875}
+--- !u!114 &1403706881
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403706875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7f691dd5001a441b8f9f862f8e6c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootDelay: 5
 --- !u!43 &1484200936
 Mesh:
   m_ObjectHideFlags: 0
@@ -7333,7 +7365,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAmmo: 30
   currentAmmo: 30
+  _input: {fileID: 2111324981}
   isActive: 0
+--- !u!114 &1609164484
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1609164476}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7f691dd5001a441b8f9f862f8e6c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootDelay: 0.2
 --- !u!1 &1637428391
 GameObject:
   m_ObjectHideFlags: 0
@@ -8609,6 +8655,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 225521311}
+    - targetCorrespondingSourceObject: {fileID: 167952, guid: 6f0a98602bcb0174db5bfe9ca9583a45,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 225521312}
   m_SourcePrefab: {fileID: 100100000, guid: 6f0a98602bcb0174db5bfe9ca9583a45, type: 3}
 --- !u!1001 &1974342895
 PrefabInstance:
@@ -8719,6 +8769,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 2048985224}
+    - targetCorrespondingSourceObject: {fileID: 100002, guid: 75dcb58506746b84db987c4ce01e99b5,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2048985225}
   m_SourcePrefab: {fileID: 100100000, guid: 75dcb58506746b84db987c4ce01e99b5, type: 3}
 --- !u!1 &2048985218 stripped
 GameObject:
@@ -8746,6 +8800,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxAmmo: 60
   currentAmmo: 60
+  _input: {fileID: 2111324981}
   isActive: 0
 --- !u!114 &2048985224
 MonoBehaviour:
@@ -8760,6 +8815,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gun: {fileID: 2048985218}
+--- !u!114 &2048985225
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2048985218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8f7f691dd5001a441b8f9f862f8e6c24, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shootDelay: 0
 --- !u!1 &2055130313
 GameObject:
   m_ObjectHideFlags: 0
@@ -8908,7 +8976,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2360c372aef70d4ea19e182846c7a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player: {fileID: 2111324961}
 --- !u!195 &2100893231
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -9167,6 +9234,18 @@ MonoBehaviour:
   - {fileID: 2048985218}
   - {fileID: 225521300}
   - {fileID: 1403706875}
+--- !u!114 &2111324981 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5420857361349278248, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+    type: 3}
+  m_PrefabInstance: {fileID: 40076351}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 803005938}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e087ecce43ebbff45a1b360637807d93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2132930266 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8762286024517199033, guid: 9c489a8547f4d9e4387da15a4ff82c81,
