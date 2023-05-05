@@ -1328,7 +1328,30 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootDelay: 0
   reloadTime: 3
+<<<<<<< Updated upstream
   gunAnimator: {fileID: 0}
+=======
+--- !u!95 &225521315
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 225521300}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bee39c5c3758e8944a8a4b1ea09b9531, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+>>>>>>> Stashed changes
 --- !u!1001 &311699260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8666,6 +8689,10 @@ PrefabInstance:
         type: 3}
       insertIndex: -1
       addedObject: {fileID: 225521312}
+    - targetCorrespondingSourceObject: {fileID: 167952, guid: 6f0a98602bcb0174db5bfe9ca9583a45,
+        type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 225521315}
   m_SourcePrefab: {fileID: 100100000, guid: 6f0a98602bcb0174db5bfe9ca9583a45, type: 3}
 --- !u!1001 &1974342895
 PrefabInstance:
