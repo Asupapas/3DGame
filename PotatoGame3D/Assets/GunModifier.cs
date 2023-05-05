@@ -4,6 +4,7 @@ public class GunModifier : MonoBehaviour
 {
     public float shootDelay = 0.2f; // the time delay between shots
     public float reloadTime = 1f; // the time it takes to reload the gun
+    public Animator gunAnimator; // reference to the Animator component on the gun
     private float shootTimer = 0f; // the time remaining until the next shot can be fired
     private float reloadTimer = 0f; // the time remaining until the gun is fully reloaded
     private RaycastShooting gunScript; // reference to the RaycastShooting script on the gun
@@ -26,6 +27,7 @@ public class GunModifier : MonoBehaviour
             if (reloadTimer <= 0f)
             {
                 gunScript.currentAmmo = gunScript.maxAmmo;
+                gunAnimator.SetBool("Reload", false);
             }
         }
     }
@@ -55,8 +57,9 @@ public class GunModifier : MonoBehaviour
     {
         if (reloadTimer <= 0f)
         {
-            gunScript.currentAmmo = gunScript.maxAmmo;
+            gunAnimator.SetBool("Reload", true);
             reloadTimer = reloadTime;
         }
     }
 }
+

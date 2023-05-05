@@ -1115,7 +1115,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32450
+  m_Name: pb_Mesh32588
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -1314,8 +1314,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f27ed887f0f12946899b1a439626905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gun: {fileID: 225521300}
-  gunAnimator: {fileID: 0}
 --- !u!114 &225521312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1330,6 +1328,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootDelay: 0
   reloadTime: 3
+  gunAnimator: {fileID: 0}
 --- !u!1001 &311699260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1476,6 +1475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2360c372aef70d4ea19e182846c7a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!195 &353278914
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1861,7 +1861,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32396
+  m_Name: pb_Mesh32534
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -2781,6 +2781,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2360c372aef70d4ea19e182846c7a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!195 &582345942
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -2915,7 +2916,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32374
+  m_Name: pb_Mesh32512
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -3163,7 +3164,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32338
+  m_Name: pb_Mesh32474
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4280,7 +4281,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32574
+  m_Name: pb_Mesh32718
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -4698,6 +4699,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2360c372aef70d4ea19e182846c7a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!64 &816989597
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -5468,7 +5470,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32258
+  m_Name: pb_Mesh32390
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -5724,7 +5726,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32522
+  m_Name: pb_Mesh32660
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -5940,6 +5942,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2360c372aef70d4ea19e182846c7a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!195 &1135966454
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -6765,7 +6768,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32324
+  m_Name: pb_Mesh32460
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -6964,8 +6967,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f27ed887f0f12946899b1a439626905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gun: {fileID: 1403706875}
-  gunAnimator: {fileID: 0}
 --- !u!114 &1403706881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6980,13 +6981,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootDelay: 5
   reloadTime: 1
+  gunAnimator: {fileID: 0}
 --- !u!43 &1484200936
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32244
+  m_Name: pb_Mesh32376
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -7151,7 +7153,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh32596
+  m_Name: pb_Mesh32740
   serializedVersion: 11
   m_SubMeshes:
   - serializedVersion: 2
@@ -7354,8 +7356,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f27ed887f0f12946899b1a439626905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gun: {fileID: 1609164476}
-  gunAnimator: {fileID: 0}
 --- !u!114 &1609164483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7386,6 +7386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootDelay: 0.2
   reloadTime: 1
+  gunAnimator: {fileID: 0}
 --- !u!1 &1637428391
 GameObject:
   m_ObjectHideFlags: 0
@@ -8599,7 +8600,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 167952, guid: 6f0a98602bcb0174db5bfe9ca9583a45, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 478186, guid: 6f0a98602bcb0174db5bfe9ca9583a45, type: 3}
       propertyPath: m_RootOrder
@@ -8684,7 +8685,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 75dcb58506746b84db987c4ce01e99b5, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 75dcb58506746b84db987c4ce01e99b5, type: 3}
       propertyPath: m_Layer
@@ -8754,6 +8755,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 75dcb58506746b84db987c4ce01e99b5, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.00447133
+      objectReference: {fileID: 0}
+    - target: {fileID: 400008, guid: 75dcb58506746b84db987c4ce01e99b5, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.02547017
+      objectReference: {fileID: 0}
     - target: {fileID: 9500000, guid: 75dcb58506746b84db987c4ce01e99b5, type: 3}
       propertyPath: m_Controller
       value: 
@@ -8780,6 +8789,12 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 2048985225}
   m_SourcePrefab: {fileID: 100100000, guid: 75dcb58506746b84db987c4ce01e99b5, type: 3}
+--- !u!95 &1974342896 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 9500000, guid: 75dcb58506746b84db987c4ce01e99b5,
+    type: 3}
+  m_PrefabInstance: {fileID: 1974342895}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2048985218 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100002, guid: 75dcb58506746b84db987c4ce01e99b5,
@@ -8820,8 +8835,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f27ed887f0f12946899b1a439626905, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Gun: {fileID: 2048985218}
-  gunAnimator: {fileID: 0}
 --- !u!114 &2048985225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8836,6 +8849,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   shootDelay: 0
   reloadTime: 1
+  gunAnimator: {fileID: 1974342896}
 --- !u!1 &2055130313
 GameObject:
   m_ObjectHideFlags: 0
@@ -8984,6 +8998,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2360c372aef70d4ea19e182846c7a1d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 0}
 --- !u!195 &2100893231
 NavMeshAgent:
   m_ObjectHideFlags: 0
