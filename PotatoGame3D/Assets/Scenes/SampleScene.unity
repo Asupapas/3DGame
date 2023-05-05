@@ -1315,6 +1315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gun: {fileID: 225521300}
+  gunAnimator: {fileID: 0}
 --- !u!114 &225521312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6964,6 +6965,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gun: {fileID: 1403706875}
+  gunAnimator: {fileID: 0}
 --- !u!114 &1403706881
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7353,6 +7355,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gun: {fileID: 1609164476}
+  gunAnimator: {fileID: 0}
 --- !u!114 &1609164483
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8596,7 +8599,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 167952, guid: 6f0a98602bcb0174db5bfe9ca9583a45, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 478186, guid: 6f0a98602bcb0174db5bfe9ca9583a45, type: 3}
       propertyPath: m_RootOrder
@@ -8681,7 +8684,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 100002, guid: 75dcb58506746b84db987c4ce01e99b5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 75dcb58506746b84db987c4ce01e99b5, type: 3}
       propertyPath: m_Layer
@@ -8754,7 +8757,7 @@ PrefabInstance:
     - target: {fileID: 9500000, guid: 75dcb58506746b84db987c4ce01e99b5, type: 3}
       propertyPath: m_Controller
       value: 
-      objectReference: {fileID: 9100000, guid: d28a962625f54424c877a44b89d2fd08, type: 2}
+      objectReference: {fileID: 9100000, guid: 62ad41bf454f778438026613d88da283, type: 2}
     m_RemovedComponents: []
     m_RemovedGameObjects:
     - {fileID: 100000, guid: 75dcb58506746b84db987c4ce01e99b5, type: 3}
@@ -8818,6 +8821,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Gun: {fileID: 2048985218}
+  gunAnimator: {fileID: 0}
 --- !u!114 &2048985225
 MonoBehaviour:
   m_ObjectHideFlags: 0
