@@ -55,6 +55,7 @@ public class GunModifier : MonoBehaviour
     {
         if (reloadTimer <= 0f)
         {
+            gunScript.currentAmmo = gunScript.maxAmmo;
             reloadTimer = reloadTime;
         }
     }
