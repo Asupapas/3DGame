@@ -1327,7 +1327,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8f7f691dd5001a441b8f9f862f8e6c24, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  shootDelay: 5
+  shootDelay: 0
+  reloadTime: 3
 --- !u!1001 &311699260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6976,6 +6977,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootDelay: 5
+  reloadTime: 1
 --- !u!43 &1484200936
 Mesh:
   m_ObjectHideFlags: 0
@@ -7380,6 +7382,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootDelay: 0.2
+  reloadTime: 1
 --- !u!1 &1637428391
 GameObject:
   m_ObjectHideFlags: 0
@@ -8828,6 +8831,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   shootDelay: 0
+  reloadTime: 1
 --- !u!1 &2055130313
 GameObject:
   m_ObjectHideFlags: 0

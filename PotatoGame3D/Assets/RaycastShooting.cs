@@ -48,7 +48,7 @@ public class RaycastShooting : MonoBehaviour
 
     void Reload()
     {
-        currentAmmo = maxAmmo;
+        gunModifier.Reload();
     }
 }
 
