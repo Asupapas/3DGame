@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class RecoilScript : MonoBehaviour
+public class Recoil : MonoBehaviour
 {
     public GameObject Gun;
     private Animator gunAnimator;
