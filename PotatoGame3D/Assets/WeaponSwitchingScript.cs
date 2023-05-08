@@ -28,6 +28,14 @@ public class WeaponSwitchingScript : MonoBehaviour
         {
             SetActiveWeapon(2);
         }
+        else if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha4))
+        {
+            SetActiveWeapon(3);
+        }
+        else if (UnityEngine.Input.GetKeyDown(KeyCode.Alpha5))
+        {
+            SetActiveWeapon(4);
+        }
     }
 
     private void SetActiveWeapon(int index)
