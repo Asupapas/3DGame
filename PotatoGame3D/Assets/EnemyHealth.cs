@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,6 +25,11 @@ public class EnemyHealth : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
+    }
+
+    internal void TakeDamage(float damage)
+    {
+        throw new NotImplementedException();
     }
 }
 
