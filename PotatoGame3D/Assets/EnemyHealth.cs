@@ -27,9 +27,6 @@ public class EnemyHealth : MonoBehaviour
         Destroy(gameObject);
     }
 
-    internal void TakeDamage(float damage)
-    {
-        throw new NotImplementedException();
-    }
+    
 }
 

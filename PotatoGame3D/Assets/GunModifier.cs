@@ -8,7 +8,6 @@ public class GunModifier : MonoBehaviour
     private float shootTimer = 0f; // the time remaining until the next shot can be fired
     private float reloadTimer = 0f; // the time remaining until the gun is fully reloaded
     private RaycastShooting gunScript; // reference to the RaycastShooting script on the gun
-    public float damage;
 
     private void Start()
     {
@@ -46,7 +45,7 @@ public class GunModifier : MonoBehaviour
             {
                 if (hit.collider.gameObject.tag == "Enemy")
                 {
-                    hit.collider.gameObject.GetComponent<EnemyHealth>().TakeDamage(damage);
+                    hit.collider.gameObject.GetComponent<EnemyHealth>().TakeDamage(1);
                 }
             }
 

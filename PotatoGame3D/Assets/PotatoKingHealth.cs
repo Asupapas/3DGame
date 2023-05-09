@@ -28,8 +28,5 @@ public class PotatoKingHealth : MonoBehaviour
         SceneManager.LoadScene("Ending");
     }
 
-    internal void TakeDamage(float damage)
-    {
-        throw new NotImplementedException();
-    }
+    
 }
