@@ -6,7 +6,7 @@ public class MainMenu : MonoBehaviour
     // Function to load Level 1 scene
     public void LoadLevel1()
     {
-        SceneManager.LoadScene("Level 1");
+        SceneManager.LoadScene("Level1");
     }
 
     // Function to load Level Select scene
@@ -19,6 +19,20 @@ public class MainMenu : MonoBehaviour
     public void QuitGame()
     {
         Application.Quit();
+    }
+    public void Tutorial()
+    {
+        SceneManager.LoadScene("Tutorial");
+    }
+
+    public void Beginning()
+    {
+        SceneManager.LoadScene("Beginning");
+    }
+
+    public void LoadMainMenu()
+    {
+        SceneManager.LoadScene("MainMenu");
     }
 }
 
