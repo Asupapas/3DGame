@@ -6,6 +6,8 @@ TagManager:
   tags:
   - CinemachineTarget
   - Enemy
+  - Enemy
+  - Potato King
   layers:
   - Default
   - TransparentFX
