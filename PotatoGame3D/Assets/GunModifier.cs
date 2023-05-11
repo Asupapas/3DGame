@@ -46,6 +46,11 @@ public class GunModifier : MonoBehaviour
                 if (hit.collider.gameObject.tag == "Enemy")
                 {
                     hit.collider.gameObject.GetComponent<EnemyHealth>().TakeDamage(1);
+                    
+                }
+                if(hit.collider.gameObject.tag == "Potato King")
+                {
+                    hit.collider.gameObject.GetComponent<PotatoKingHealth>().TakeDamage(1);
                 }
             }
 
