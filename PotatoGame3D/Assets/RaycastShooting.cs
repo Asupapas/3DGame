@@ -11,7 +11,8 @@ public class RaycastShooting : MonoBehaviour
     public int currentAmmo;
     public StarterAssetsInputs _input;
     public bool isActive = false;
-    public GunModifier gunModifier;
+    [SerializeField]
+    private GunModifier gunModifier;
     public TextMeshProUGUI ammoText;
 
     void Start()
