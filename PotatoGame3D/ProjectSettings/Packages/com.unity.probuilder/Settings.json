@@ -2,8 +2,6 @@
     "m_Dictionary": {
         "m_DictionaryValues": [
             {
-<<<<<<< HEAD
-=======
                 "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "experimental.enabled",
                 "value": "{\"m_Value\":false}"
@@ -89,7 +87,6 @@
                 "value": "{\"m_Value\":true}"
             },
             {
->>>>>>> 632019bf867cd67f4a007c2eb2cab5cd061e5e10
                 "type": "UnityEngine.ProBuilder.LogLevel, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "log.level",
                 "value": "{\"m_Value\":3}"
@@ -125,11 +122,6 @@
                 "value": "{\"m_Value\":2}"
             },
             {
-<<<<<<< HEAD
-                "type": "System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
-                "key": "ShapeComponent.ResetSettings",
-                "value": "{\"m_Value\":false}"
-=======
                 "type": "UnityEngine.ProBuilder.SelectMode, Unity.ProBuilder, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null",
                 "key": "editor.selectMode",
                 "value": "{\"m_Value\":1}"
@@ -233,7 +225,6 @@
                 "type": "System.Single, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089",
                 "key": "ExtrudeEdges.distance",
                 "value": "{\"m_Value\":0.5}"
->>>>>>> 632019bf867cd67f4a007c2eb2cab5cd061e5e10
             }
         ]
     }

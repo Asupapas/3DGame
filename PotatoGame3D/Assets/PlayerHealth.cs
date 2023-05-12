@@ -15,9 +15,9 @@ public class PlayerHealth : MonoBehaviour
         currentHealth = maxHealth;
     }
 
-    void OnTriggerEnter(Collider other)
+    void OnCollisionEnter(Collision collision)
     {
-        if (other.CompareTag(enemyTag) && !isInvincible)
+        if (collision.collider.CompareTag(enemyTag) && !isInvincible)
         {
             TakeDamage(10); // Reduce health by 10
             StartCoroutine(Invincibility());
