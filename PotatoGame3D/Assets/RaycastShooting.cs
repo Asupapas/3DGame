@@ -1,6 +1,7 @@
 using StarterAssets;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 using UnityEngine.Windows;
 
@@ -10,32 +11,32 @@ public class RaycastShooting : MonoBehaviour
     public int currentAmmo;
     public StarterAssetsInputs _input;
     public bool isActive = false;
-    private GunModifier gunModifier;
+    public GunModifier gunModifier;
+    public TextMeshProUGUI ammoText;
 
     void Start()
     {
         _input = transform.root.GetComponent<StarterAssetsInputs>();
         gameObject.SetActive(isActive); // enable or disable the weapon game object based on isActive
-        gunModifier = GetComponent<GunModifier>();
+        currentAmmo = maxAmmo;
     }
 
     void Update()
     {
         gameObject.SetActive(isActive); // enable or disable the weapon game object based on isActive
 
-        RaycastHit hit;
-        gameObject.SetActive(isActive); // enable or disable the weapon game object based on isActive
-
-        if (_input.shoot)
+        if (_input.shoot && currentAmmo > 0)
         {
             gunModifier.Shoot();
+            currentAmmo--;
+            UpdateAmmoText();
         }
         if (_input.reload)
         {
             Reload();
             _input.reload = false;
         }
-        if (Physics.Raycast(transform.position, transform.forward, out hit))
+        if (Physics.Raycast(transform.position, transform.forward, out RaycastHit hit))
         {
             string tag = hit.collider.gameObject.tag;
             if (tag == "Tagged")
@@ -49,6 +50,12 @@ public class RaycastShooting : MonoBehaviour
     void Reload()
     {
         gunModifier.Reload();
+        currentAmmo = maxAmmo;
+        UpdateAmmoText();
+    }
+
+    void UpdateAmmoText()
+    {
+        ammoText.text = "Ammo: " + currentAmmo + "/" + maxAmmo;
     }
 }
-
